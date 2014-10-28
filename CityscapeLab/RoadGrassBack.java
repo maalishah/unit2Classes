@@ -6,52 +6,46 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 
 /**
- * Write a description of class Road here.
+ * Creates an instance of a road, grass, and a background.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mir Alishah (Shah) 
+ * @version 10 October 2014
  */
 public class RoadGrassBack
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int xLeft;
+    /* Initializes y coordinate, width, and heigh of a road, grass, and background */
     private int yTop;
     private int width;
     private int height;
 
     /**
-     * Default constructor for objects of class Road
+     *@param    y   y coordinate of road, or grass, or background
+     *@param    w   width of road, grass, or background
+     *@param    h   heigh of road, grass, or background
      */
-    public RoadGrassBack(int x, int y, int w, int h)
+    public RoadGrassBack(int y, int w, int h)
     {
-        // initialise instance variables
-        xLeft = x;
+        /*  */
         yTop = y;
         width = w;
         height = h;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Creates a road, grass, and background
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2    draws a road, grass, and background in to the component
      */
     public void draw(Graphics2D g2)
     {
-        Rectangle road = new Rectangle(xLeft, yTop + 10, 800, 100);
-        Rectangle line1 = new Rectangle(xLeft + 25, yTop + 50, 60, 10); 
-        Rectangle line2 = new Rectangle(xLeft + 150, yTop + 50, 60, 10);
-        Rectangle line3 = new Rectangle(xLeft + 275, yTop + 50, 60, 10);
-        Rectangle line4 = new Rectangle(xLeft + 400, yTop + 50, 60, 10);
-        Rectangle line5 = new Rectangle(xLeft + 525, yTop + 50, 60, 10);
-        Rectangle line6 = new Rectangle(xLeft + 650, yTop + 50, 60, 10);
-        Rectangle line7 = new Rectangle(xLeft + 775, yTop + 50, 60, 10);
+        Rectangle road = new Rectangle( 0, yTop + 10, 800, 100);
+        Rectangle line1 = new Rectangle(  25, yTop + 50, 60, 10); 
+        Rectangle line2 = new Rectangle(   150, yTop + 50, 60, 10);
+        Rectangle line3 = new Rectangle(   275, yTop + 50, 60, 10);
+        Rectangle line4 = new Rectangle(   400, yTop + 50, 60, 10);
+        Rectangle line5 = new Rectangle(   525, yTop + 50, 60, 10);
+        Rectangle line6 = new Rectangle(   650, yTop + 50, 60, 10);
+        Rectangle line7 = new Rectangle(   775, yTop + 50, 60, 10);
         
         Rectangle back = new Rectangle(0, 0, width, height-100);
         g2.setColor(Color.cyan);

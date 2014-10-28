@@ -6,21 +6,15 @@ import javax.swing.JComponent;
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
  *  cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author Mir Alishah (Shah)
+ * @version 10 October 2014
  */
 public class CityscapeComponent extends JComponent
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Creates instances of classes and draws them in the frame.
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g    allows you to draw objects
      */
     public void paintComponent(Graphics g)
     {
@@ -30,7 +24,7 @@ public class CityscapeComponent extends JComponent
         int height = getHeight();
         // create instances of classes and invoke the draw method on each
         // ...
-        RoadGrassBack background  = new RoadGrassBack(0, 400, width, height);
+        RoadGrassBack background  = new RoadGrassBack(400, width, height);
         Building building1 = new Building(30, 259, 150, 4);
         Building building2 = new Building(160, 209, 200, 6);
         Building building3 = new Building(290, 159, 250, 8);

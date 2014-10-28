@@ -3,19 +3,22 @@ import java.awt.Rectangle;
 import java.awt.Color;
 
 /**
- * Write a description of class Road here.
+ * Creates a window in the building class.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mir Alishah (Shah) 
+ * @version 10 October 2014
  */
 public class Window
 {
-    /** description of instance variable x (add comment for each instance variable) */
+    /* Initializes x and y coordinates of windows */
     private int xLeft;
     private int yTop;
 
     /**
-     * Default constructor for objects of class Road
+     * Initiates a window object for the building.
+     * 
+     *@param    x   x coordinate of building
+     *@param    y   y coordinate of building
      */
     public Window(int x, int y)
     {
@@ -25,15 +28,9 @@ public class Window
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * Creates windows in the building class
+     * 
+     * @param    g2    object that draws windows into the building
      */
     public void draw(Graphics2D g2)
     {
